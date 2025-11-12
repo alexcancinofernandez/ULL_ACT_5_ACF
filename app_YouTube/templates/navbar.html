@@ -1,0 +1,45 @@
+<nav class="navbar navbar-expand-lg nav-bg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="{% url 'inicio_YouTube' %}"><i class="bi bi-youtube"></i> Sistema de Administración YouTube</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+
+  
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="{% url 'inicio_YouTube' %}"><i class="bi bi-house"></i> Inicio</a></li>
+  
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"><i class="bi bi-channel"></i> Canal</a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="{% url 'agregar_canal' %}">Agregar Canal</a></li>
+              <li><a class="dropdown-item" href="{% url 'ver_canal' %}">Ver Canal</a></li>
+              <li><a class="dropdown-item" href="#">Actualizar Canal</a></li>
+              <li><a class="dropdown-item" href="#">Borrar Canal</a></li>
+            </ul>
+          </li>
+  
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"><i class="bi bi-camera-video"></i> Video</a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="{% url 'agregar_video' %}">Agregar Video</a></li>
+              <li><a class="dropdown-item" href="{% url 'ver_video' %}">Ver Video</a></li>
+            </ul>
+          </li>
+          
+          
+  
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"><i class="bi bi-list-ul"></i> Playlist</a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="{% url 'agregar_playlist' %}">Agregar Playlist</a></li>
+              <li><a class="dropdown-item" href="{% url 'ver_playlist' %}">Ver Playlist</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
